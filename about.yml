@@ -1,0 +1,5 @@
+author: simon.harris@cogentconsulting.com.au
+summary: Ruby on Rails Models and Helpers for integrating with Drupal
+homepage: http://github.com/harukizaemon/drupal_fu
+license: MIT
+rails_version: 2.2

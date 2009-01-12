@@ -1,5 +1,10 @@
 module Drupal
+  # Implements a Ruby-compatible subset of the PHP serialisation mechanism. This is often used for storing structured
+  # data in text database columns.
   module Serialize
+    # Serialises a value. For example:
+    #
+    #   Drupal::Serialize.serialize("Hello, World!")  # => "s:13:\"Hello, World!\";"
   	def self.serialize(var, assoc = false)
   		s = ''
   		case var
@@ -64,6 +69,9 @@ module Drupal
   		s
   	end
 
+    # Unserialises a value. For example:
+    #
+    #   Drupal::Serialize.unserialize("s:13:\"Hello, World!\";")  # "Hello, World!"
   	def self.unserialize(string, classmap = nil, assoc = false)
   		string = StringIO.new(string)
   		def string.read_until(char)

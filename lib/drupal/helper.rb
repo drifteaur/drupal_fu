@@ -1,4 +1,11 @@
 module Drupal
+  # Some useful helper methods for accessing various configuration items. Simply include this module in whichever
+  # controller(s) need the behaviour. For example:
+  #
+  #   class ApplicationController < ActionController::Base
+  #     include Drupal::Helper
+  #     ...
+  #   end
   module Helper
     def self.included(base)
       base.send(:helper_method, :primary_links, :root_path, :login_path, :site_name, :site_slogan)

@@ -1,0 +1,3 @@
+== 1.0.0 released 2009-01-12
+
+* Add some very basic RDOC and packaged up as a gem.

@@ -1,0 +1,17 @@
+= Drupal Fu
+
+Drupal Fu is a Ruby on Rails plugin that helps with integrating Rails applications with Drupal.
+
+== Installation
+
+You have two choices for installation. The first uses a gem (recommended):
+
+  config.gem "harukizaemon-drupal_fu", :lib => "drupal_fu", :source => "http://gems.github.com"
+
+Or you can use the Rails plugin
+
+  $ ruby script/plugin install git://github.com/harukizaemon/drupal_fu.git
+
+=== License
+
+This plugin is copyright 2009 by 2009 Cogent Consulting, Pty. Ltd. and is released under the MIT license.
